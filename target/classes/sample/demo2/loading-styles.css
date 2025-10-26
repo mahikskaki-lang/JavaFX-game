@@ -1,0 +1,33 @@
+/* The overlay that creates the dark, feathered border */
+.vignette-overlay {
+    -fx-background-color: radial-gradient(center 50% 50%, radius 50%, transparent 40%, black 100%);
+    -fx-animation: pulse-vignette 4s ease-in-out infinite; /* Apply the pulsing animation */
+}
+
+/* Keyframe animation for the pulsing vignette effect */
+@keyframes pulse-vignette {
+    0% { -fx-opacity: 0.8; }
+    50% { -fx-opacity: 1.0; }
+    100% { -fx-opacity: 0.8; }
+}
+
+/* A simple, clean font for the loading text */
+.loading-text {
+    -fx-font-family: "Consolas", monospace;
+    -fx-font-size: 14px;
+    -fx-fill: #b0b0b0;
+}
+
+/* Style for the progress bar's track */
+.progress-bar .track {
+    -fx-background-color: #1a1a1a;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+/* Style for the bar that fills up */
+.progress-bar .bar {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #8b0000, #c92a2a);
+    -fx-background-insets: 1;
+    -fx-background-radius: 0;
+}

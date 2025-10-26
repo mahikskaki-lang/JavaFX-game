@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" prefHeight="600.0" prefWidth="800.0" stylesheets="@loading-styles.css" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.demo2.main.LoadingController">
+    <children>
+        <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <ImageView fx:id="backgroundGifView" fitHeight="600.0" fitWidth="800.0" preserveRatio="false" />
+
+            <Pane styleClass="vignette-overlay" />
+
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                <children>
+                    <Text fx:id="loadingText" styleClass="loading-text" text="Loading..." />
+                    <ProgressBar fx:id="progressBar" prefWidth="300.0" progress="0.0" />
+                </children>
+                <padding>
+                    <Insets bottom="30.0" />
+                </padding>
+            </VBox>
+        </StackPane>
+    </children>
+</AnchorPane>
