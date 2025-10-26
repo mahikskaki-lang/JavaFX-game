@@ -115,5 +115,4 @@ User identity and progress are maintained through persistence features.
 2. **Guest:** From the Title screen, navigate to **Multiplayer** → **Join Game**. Paste the complete host:port into the field and press **Connect**.  
 3. **Requirement:** Both devices must be on the **same Wi-Fi network**, and firewall permissions must be granted if prompted.
 
-Project Link: \[Insert link\]  
 Demo Video: \[Insert link\]
